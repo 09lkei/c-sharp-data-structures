@@ -1,0 +1,15 @@
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\bin\Debug\net7.0\Csharp circular queues.exe
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\bin\Debug\net7.0\Csharp circular queues.deps.json
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\bin\Debug\net7.0\Csharp circular queues.runtimeconfig.json
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\bin\Debug\net7.0\Csharp circular queues.dll
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\bin\Debug\net7.0\Csharp circular queues.pdb
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.csproj.AssemblyReference.cache
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.AssemblyInfoInputs.cache
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.AssemblyInfo.cs
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.csproj.CoreCompileInputs.cache
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.dll
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\refint\Csharp circular queues.dll
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.pdb
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\Csharp circular queues.genruntimeconfig.cache
+C:\Users\Lawrence Kei\RiderProjects\Csharp circular queues\Csharp circular queues\obj\Debug\net7.0\ref\Csharp circular queues.dll
