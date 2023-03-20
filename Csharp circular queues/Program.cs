@@ -27,7 +27,7 @@ class queue<T> {
 
   public void enqueue(T newItem) {
     if ((back-front)<maxSize) {
-      data[back] = newItem;
+      data[back%maxSize] = newItem;
       if (back<maxSize*2) {
         back++;
       }
@@ -44,7 +44,7 @@ class queue<T> {
   public T dequeue() {
     if (back-front>0)
     {
-      T removed = data[front];
+      T removed = data[front%maxSize];
       if (front < maxSize)
       {
         front++;
