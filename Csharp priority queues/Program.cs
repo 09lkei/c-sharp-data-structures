@@ -4,18 +4,27 @@ class Program
 {
     public static void Main(string[] args)
     {
-        
+        myPriorityQueue<int> queue = new myPriorityQueue<int>(10,10);
+        for (int i = 0; i < 100; i++)
+        {
+            queue.enqueue(i,(i+1)%10);
+        }
+
+        for (int i = 0; i < 100; i++)
+        {
+            Console.WriteLine(queue.dequeue());
+        }
     }
 }
 
-class priorityQueue<T>
+class myPriorityQueue<T>
 {
     private T[,] data;
     private int size;
     private int levels;
     private int[] backs;
     private int[] fronts;
-    public priorityQueue(int size, int levels)
+    public myPriorityQueue(int size, int levels)
     {
         this.size = size;
         this.levels = levels;
@@ -29,7 +38,7 @@ class priorityQueue<T>
         int back = backs[level];
         int front = fronts[level];
         if ((back-front)<size) {
-            data[level, back] = newItem;
+            data[level, back%size] = newItem;
             if (back<size*2) {
                 backs[level]++;
             }
@@ -43,31 +52,24 @@ class priorityQueue<T>
         }
     }
     public T dequeue() {
-        for (int i = 1; i <= levels; i++)
+        for (int i = 1; i < levels; i++)
         {
-            if (i == levels)
+            if (backs[i] > fronts[i])
             {
-                Console.WriteLine("Tried dequeueing from empty list");
-                return default(T);
-            }
-            else
-            {
-                if (backs[i] > fronts[i])
+                T removed = data[i,fronts[i]%size];
+                if (fronts[i] < size)
                 {
-                    T removed = data[i,fronts[i]];
-                    if (fronts[i] < size)
-                    {
-                        fronts[i]++;
-                    }
-                    else
-                    {
-                        fronts[i] = 0;
-                        backs[i] -= size;
-                    }
-                    return removed;
+                    fronts[i]++;
                 }
+                else
+                {
+                    fronts[i] = 0;
+                    backs[i] -= size;
+                }
+                return removed;
             }
         }
-        
+        Console.WriteLine("Tried dequeueing from empty list");
+        return default(T);
     }
 }
