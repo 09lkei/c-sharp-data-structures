@@ -60,9 +60,18 @@ class queue<T> {
     }
   }
 
-  public void returnQueue() {
-    foreach (T s in data) {
-      Console.WriteLine(s);
+  public void returnQueue()
+  {
+    for (int i =front;i<back;i++)
+    {
+      if (i < maxSize)
+      {
+        Console.WriteLine(data[i]);
+      }
+      else
+      {
+        Console.WriteLine(data[i-maxSize]);
+      }
     }
   }
 }
